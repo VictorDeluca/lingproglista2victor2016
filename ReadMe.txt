@@ -259,7 +259,9 @@ c)
 --------------------------------------------------------------------------------------------------------------
 Haskell
 --------------------------------------------------------------------------------------------------------------
-
+Nota: Embora o enunciado das próximas questões cobre apenas as funções, eu resolvi colocar uma aplicação delas no Main, para
+a solução ficar mais completa.
+--------------------------------------------------------------------------------------------------------------
 srt::(Ord a)=>[a]->[a]
 srt[]=[]
 srt lista=srt1 lista(length lista)
@@ -281,6 +283,14 @@ main = do
 	print(k)
 	print("Array ordenada")
 	print(m)
+-----------------------------------------------------------------------------------------------------------------------
+Input: Inexistente
+Output:
+"Array normal"
+[1,7,6,8,40,-45,3]
+"Array ordenada"
+[-45,1,3,6,7,8,40]
+-----------------------------------------------------------------------------------------------------------------------
 
 	
 	
@@ -296,8 +306,6 @@ mini [x] = x
 mini (x:xs)
 	| x < mini xs = x
 	| otherwise = mini xs
-	
--- Nota: O enunciado pede apenas as funcoes, mas eu quis colocar um exemplo de uso no Main para ficar mais completo.
 
 main = do 
 	let k = [1,7,6,8,40,-45,3]
@@ -309,3 +317,13 @@ main = do
 	print(m)
 	print("E o menor e o numero")
 	print(n)
+-------------------------------------------------------------------------------------------------------------------------
+Input: Inexistente
+Output:
+"O maior dentre os numeros abaixo:"
+[1,7,6,8,40,-45,3]
+"E o numero"
+40
+"E o menor e o numero"
+-45
+-------------------------------------------------------------------------------------------------------------------------
